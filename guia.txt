@@ -1,0 +1,131 @@
+
+{SLIDE 1}    [slide titulo]
+[se apresenta] e vou falar sobre 
+
+{SLIDE 2}  [slide titulo pesquisa]
+essa pesquisa de comunicações entre 
+dispositivos em nano-escala. Pois tecnologia do tamanho de uma célula
+humana requer novos protocolos de comunicação.
+
+{SLIDE 3}
+Nanotecnologia foi descrita pela primeira vez em 1959 pelo físico
+ganhador de Nobel Richard Feynman. Fora descrever pela primeira vez
+o que seria nanotecnologia e suas vantagens, ele também notou
+que vários problemas iriam surgir quanto mais perto na nano-escala
+chegassem os componentes. 
+
+Hoje em dia, indústria e pesquisadores estão chegando nesses problemas
+devido à miniaturização de componentes e de tecnologias de manufaturamento.
+O que faz com que seja necessário levar em conta as propriedades da nano-escala
+em consideração.
+
+Essa pesquisa se foca no desenvolvimento de nanomáquinas e da interconexão entre
+elas, formando uma nano-rede. O propósito da pesquisa é de mostrar um melhor
+entendimento dos problemas atuais de pesquisa nessa área, e pavimentar o
+caminho para pesquisas futuras.
+
+{SLIDE 4}
+As aplicações de nano-redes são imensas e podem ser divididas nessas 4 grandes
+áreas:  [mostra lista no SLIDE]
+[BIOMÉDICA] monitoração de dados relativos à saúde de uma pessoa, sistemas de
+            aplicação de medicamentos, suporte ao sistema imunológico, etc;
+[INDUSTRIA] desenvolvimento de materiais/tecidos inteligentes, controle de
+            qualidade de comida/bebida, etc;
+[AMBIENTAL] sensores e controle de poluição, assistência de biodegradação, etc;
+[MILITAR]   defesa contra ataques biológicos/químicos, etc;
+
+----------------------------
+{SLIDE 5}  [slide titulo subseção]
+Agora vamos falar um pouco sobre meios de criar nanomáquinas.
+
+{SLIDE 6}
+As capacidades de uma nanomáquina dependem bastante de como ela é feita.
+Os meios para produção de uma nanomáquina podem ser classificados em 3 principais
+métodos: [mostra lista no SLIDE]
+[TOP-DOWN] cria uma nanomáquina a partir da miniaturização de componentes existentes,
+           sem um controle do nível atômico.
+[BOTTOMS-UP] criação se dá a partir da montagem de componentes moleculares e
+             nanomateriais. Esses métodos tem controle do nível atômico, e 
+             permitiriam que nanomáquinas criassem nanomáquinas.
+[BIO-HIBRIDA] se daria pela combinação de componentes tecnológicos com
+              estruturas orgânicas, como as achadas em uma célula.
+              
+{SLIDE 7}
+Atualmente já existe componentes tecnológicos com pelo menos 1 dimensão menor que
+100 nanomêtros. Também já foi criado alguns componentes em nano-escala, como 
+nanotubos de carbono. Principal problema enfrentado nessa área hoje em dia é
+integrar esses componentes para criar uma nanomáquina funcional.
+
+Quanto à área de nanomáquinas bio-hibridas, a nano-escala já é o ambiente padrão de 
+proteínas, DNA e outros componentes de células. ATP poderia ser usado como bateria,
+e DNA como um meio de guardar informações ou como base para construir outros
+nano-componentes. Enquanto essa área está bem mais atrasada que a de desenvolvimento
+de nano-componentes e materiais, acredita-se que ela seria particularmente útil
+para aplicações biomédicas.
+
+----------------------------
+{SLIDE 8}  [slide titulo subseção]
+E finalmente para parte que mais interessa para essa matéria, comunicação entre esses
+minusculos dispositivos.
+
+
+{SLIDE 9}
+Nanocomunicação é a troca de informações na nano-escala, e é a base de qualquer interconexão
+com ou sem fio entre nanomáquinas em rede.
+O jeito que nanomáquinas comunicam entre si depende do jeito que foram feitas, e a aplicação
+alvo dessas nanomáquinas também limitam o tipo de nanocomunicação que pode ser usado.
+
+Várias alternativas já foram propostas, e elas vão desde miniaturizar métodos de comunicação
+existentes a criação de métodos novos inspirados na biologia.
+
+{SLIDE 10} 
+Frequências na banda de terahertz tão atraindo a atenção de pesquisadores para várias aplicações.
+Ainda não é claro como nanomáquinas com capacidade limitadas poderiam usar todo esse potencial
+[como mostrado no slide], mas o autor propõe usar pulsos de baixa energia com duração de
+femtossegundos como um paradigma simples e robusto para comunicação entre nanomáquinas.
+
+{SLIDE 11}
+Todas essas propostas inspiradas na biologia foram discutidas em outros artigos pelo Akyildiz
+(com outras participações).
+[Feromonios], [Neuronios] e [Capilares] também envolvem difusão de moléculas, mas tem diferenças
+consideráveis entre si e a [DifusãoLivre].
+
+Em outro artigo, o Akyildiz analizou o comportamento da difusão molecular em termos de atenuação
+e delay. Ele também criou modelos matemáticos dos processos envolvidos na transmissão molecular,
+e seus resultados dão uma avaliação numérica das capacidades de comunicação do meio físico e 
+definem modelos simples e confiáveis que podem ser usados desde o começo no desenvolvimento 
+de sistemas de comunicação moleculares baseados na difusão livre de moléculas.
+
+E em ainda outro artigo, ele estuda os limites teóricos da capacidade de informação de sistemas
+de comunicação moleculares baseados em difusão-livre, mostranso que a ordem de magnitude
+da capacidade é bem maior que a capacidade de sistemas clássicos de comunicação.
+
+
+----------------------------
+{SLIDE 12}   [slide titulo subseção]
+Assim como em todas redes de comunicação, precisam existir protocolos para a
+nanocomunicação, levando em conta as peculiaridades dos métodos de comunicação
+nessa escala, como esses que discutimos anteriormente.
+
+{SLIDE 13}
+Um exemplo que eles dão para comunicação na banda de Terahertz é usando pulsos
+de duração de femtossegundos (1fs = 10^(-15)secs).
+Usando pulsos assim, chance de colisão de transmissões são quase inexistentes, 
+e portanto o protocolo MAC pode ser bem simplificado. 
+Novos métodos de verificar integridade, codificação e correção de erros deverão
+ser criados de acordo com as capacidades das nanomáquinas.
+Quanto à acesso e routing, dar um ID único a cada nanomáquina pode ser impraticável,
+porém usando a natureza de comunicação por pulsos pode fazer as nanomáquinas terem
+uma noção das distâncias entre elas.
+
+{SLIDE 14}
+Protocolos moleculares são bem diferentes dos protocolos usados em comunicações
+eletromagnéticas.
+Primeiramente, velocidade de transmissão de uma molécula é bem menor que uma onda
+eletromagnética, porém uma molécula pode carregar muita informação.
+Acesso, routing, detecção de colisão e outros aspectos do protocolo devem levar
+em consideração as interações que podem ocorrer entre as moléculas e outras
+moléculas ou com o próprio ambiente.
+
+Reações elétricas ou quimicas podem alterar a transmissão de uma molécula, 
+assim como o vento pode alterar a propagação de feromônios no ar.

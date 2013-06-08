@@ -9,145 +9,155 @@
 \usepackage{upquote}
 \usetheme{JuanLesPins}
 
-\title{MAC0431 EP2}
-\author{Fernando Omar Aluani \\ Jefferson Serafim Ascaneo}
+\title{Seminário - Computação Móvel}
+\author{Fernando Omar Aluani}
 
 \begin{document}
 
+%SLIDE 1
 \frame{\titlepage}
 
-\section{Introdução}
+\section{Pesquisa - Keynote}
 
+%SLIDE 2
 \frame{
   \begin{center}
-    \LARGE Introdução
+    \LARGE Nanonetworks: A New Frontier in Communications \\
+    \normalsize Ian F. Akyildiz, Josep Miquel Jornet, Massimiliano Pierobon
   \end{center}
 }
 
+%SLIDE 3
 \frame{
-  \underline{\Large Propósito:}
-  
-  \pause
-  \vspace{10pt}
-  \hspace{10pt}
-  Análise da participação de desenvolvedores em um repositório \textit{Git},
-  extraindo estatísticas dos commits no projeto.
+  Nanotecnologia consiste no processamento, separação, consolidação e deformação
+  de materiais por um átomo ou por uma molécula. \\
+  \vspace{7pt}
+  Entre os vários objetivos da nanotecnologia, essa pesquisa se foca no
+  desenvolvimento de \textbf{nanomáquinas}: Dispositivos funcionais consistindo de
+  componentes em nanoescala e capazes de realizar tarefas simples nessa escala.\\
+  \vspace{7pt}
+  E da inteconexão de nanomáquinas em uma rede, ou \textbf{nanorede}, como uma
+  forma de solucionar as limitações de uma nanomáquina individual.
 }
 
+%SLIDE 4
 \frame{
-  \underline{\Large Fonte dos Dados:}
-  
-  \pause
+  As aplicações potenciais de uma nanoredes são imensa, e podem ser classificadas
+  em quatro grandes áreas:
   \vspace{10pt}
-  \hspace{10pt}
-  Relatório dos commits (de qualquer intervalo de tempo) de um repositório.
-  Gerado pelo próprio Git pelo comando \\
+  \begin{itemize}
+    \item Aplicações Biomedicinais.
+    \item Aplicações Industriais.
+    \item Aplicações Ambientais.
+    \item Aplicações Militares.
+  \end{itemize}
+}
+
+\subsection{Criando Nanomáquinas}
+
+%SLIDE 5
+\frame{
   \begin{center}
-    \textbf{git log --numstat}
+    \LARGE Manufatura de Nanomáquinas
   \end{center}
 }
 
-\section{Problema}
+%SLIDE 6
+\frame{
+  Capacidades de uma nanomáquina dependem muito de como ela é feita. \\
+  \vspace{10pt}
+  Classificações de métodos de desenvolvimento de nanomáquinas:\\
+  \begin{itemize}
+    \item \textit{Top-Down}.
+    \item \textit{Bottom-Up}.
+    \item Bio-Hibrídas.
+  \end{itemize}
+}
 
+%SLIDE 7
+\frame{
+  Componentes \textit{Man-Made}: já foi criado diversos componentes em nano-escala, como
+  nanotubos de carbono, transistores de grafeno, etc; \\
+  \vspace{10pt}
+  Componentes Biológicos: reuso de componentes biológicos como organelas, ATP e DNA,
+  enquanto não foram experimentados ainda poderiam ser muito úteis para criação de 
+  nanomáquinas com aplicações biomédicas.
+}
+
+\subsection{Habilitando Nanocomunicação}
+
+%SLIDE 8
 \frame{
   \begin{center}
-    \LARGE Problema
+    \LARGE Habilitando Nanocomunicação
   \end{center}
 }
 
+%SLIDE 9
 \frame{
-  \underline{\Large Entrada:}
-  
-  \pause
-  \hspace{10pt}
-  Log dos commits do Git. O log é composto pelas informações de cada commit, do
-  mais recente ao mais antigo, de forma sequencial. O ``bloco'' de cada commit
-  contêm as seguintes informações:
-  
-  \pause
+  O jeito que nanomáquinas comunicam entre si depende do jeito que foram feitas. \\
+  E a aplicação alvo dessas nanomáquinas também limitam o tipo de nanocomunicação 
+  que pode ser usado. \\
+  \vspace{10pt}
+  Métodos propostos vão desde miniaturização de métodos de comunicação existentes
+  (baseados em eletromagnetismo, luz, som ou meios mecânicos) à desenvolvimento
+  de novos métodos inspirados na biologia.
+}
+
+%SLIDE 10
+\frame{
+  Nanoantenas de grafeno sofrem fenomenos quânticos que a fazem ser mais eficiente
+  que antenas normais, mas também fazem a sua eficiência de radiação ser prejudicada.\\
+  Nanotubos de carbono foram propostos como a base de um nano-rádio eletromecânico.
+  Essa técnica já foi provada para recepção, mas necessitaria de fontes de energia 
+  poderosas em nano-escala para transmissão ativa.\\
+  \vspace{7pt}
+  \textbf{Banda de Terahertz (0.1THz-10Thz)}: frequência de resonância esperada de uma
+  nanoantena de grafeno de um $\mu m$ de comprimento. Essa banda tem uma janela de
+  transmissão bem larga, suportando altas taxas de transmissão em curtas distâncias
+  (Terabits/segundo em menos de 1 metro).
+}
+
+%SLIDE 11
+\frame{
+  Métodos propostos inspirados na biologia: \\
+  \vspace{10pt}
   \begin{itemize}
-    \item Hashcode que identifica unicamente o commit.
-    \item Nome e email do autor do commit.
-    \item Data e hora em que o commit foi feito.
-    \item Texto descrevendo o commit (escrito pelo autor).
-    \item Lista de triplas contendo: número de linhas adicionadas, número de linhas removidas,
-          nome do arquivo alterado.
+    \item Difusão livre de moléculas;
+    \item Feromônios;
+    \item Baseados em neurônios (usando fibras nervosas);
+    \item Circuitos de fluxos de capilares;
+    \item Transporte de moléculas usando bácterias ou nanomotores;
   \end{itemize}
 }
 
-\frame{
-  \underline{\Large Saída:}
-  
-  \pause
-  \vspace{10pt}
-  Para cada desenvolvedor que fez algum commit:
-  \begin{itemize}
-    \item Número de commits feitos pelo desenvolvedor;
-    \item Média, desvio padrão e total de linhas modificadas pelo desenvolvedor;
-  \end{itemize}
-  
-  \pause
-  \vspace{10pt}
-  Para os commits no geral:
-  \begin{itemize}
-    \item Média e desvio padrão de linhas modificadas por commit;
-  \end{itemize}
-  
-  \pause
-  \vspace{10pt}
-  Para cada arquivo alterado (criado, modificado, removido, etc) no repositório:
-  \begin{itemize}
-    \item Média e desvio padrão de linhas modificadas no arquivo.
-  \end{itemize}
-}
+\subsection{Protocolos de Nanocomunicação}
 
-\section{Abordagem}
-
+%SLIDE 12
 \frame{
   \begin{center}
-    \LARGE Abordagem
+    \LARGE Protocolos de Nanocomunicação
   \end{center}
 }
 
-\begin{frame}[fragile]
-  \underline{\Large \textbf{Map}:}
-  
-  \vspace{4pt}
-  \begin{itemize}
-    \item[Entrada] Par \verb$(Chave, Texto)$.
-    \item[Saida] Coleção de pares \verb$(Atributo, Valor)$.
-  \end{itemize}
-  
-  \pause
-  \hspace{10pt}
-  Onde:
-  \begin{itemize}
-    \item \verb$Chave$ é o hash identificando o commit;
-    \item \verb$Texto$ é o bloco de texto descrevendo o commit;
-    \item \verb$Atributo$ é o nome de algum atributo extraído do commit, 
-          como por exemplo \verb$numcommits_NomeDoDesenvolvedor$;
-    \item \verb$Valor$ é o valor desse atributo extraído do commit;
-  \end{itemize}
-\end{frame}
+%SLIDE 13
+\frame{
+  \textbf{Nanoredes de Terahertz}: a banda de Terahertz tem uma 
+  largura de banda bem larga. De um lado isso pode ser usado 
+  para permitir transmissões rápidas de dados entre nanomáquinas,
+  pelo outro lado, isso habilita novas técnicas de acesso de canais,
+  o que pode facilitar a tarefa do protocolo MAC.\\
+}
 
-\begin{frame}[fragile]
-  \underline{\Large \textbf{Reduce}:}
-  
-  \vspace{4pt}
+%SLIDE 14
+\frame{
+  \textbf{Nanoredes Moleculares}: no artigo, autor acredita que
+  estudo de protocolos vão seguir dois caminhos:\\
   \begin{itemize}
-    \item[Entrada] Pares produzidos pelo \textbf{Map}.
-    \item[Saida] Coleção de pares \verb$(Estatística, Valor)$.
+    \item Estruturas e protocolos diretamente inspirados dos processos
+    de comunicação achados na natureza;
+    \item Paradigmas clássicos adaptados para nanoredes moleculares;
   \end{itemize}
-  
-  \pause
-  \hspace{10pt}
-  Onde:
-  \begin{itemize}
-    \item \verb$Estatística$ é o nome de alguma estatística calculada a partir dos atributos do commit, 
-          como por exemplo \verb$NomeDoAtributo_media$;
-    \item \verb$Valor$ é o valor da estatística;
-  \end{itemize}
-\end{frame}
-
+}
 
 \end{document}
