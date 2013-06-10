@@ -7,6 +7,16 @@ essa pesquisa de comunicações entre
 dispositivos em nano-escala. Pois tecnologia do tamanho de uma célula
 humana requer novos protocolos de comunicação.
 
+O Ian F. Akyildiz é o professor da cadeira Ken Byers na School of Electrical
+and Computer Engineering (ECE), na Georgia Tech, fora vários outros títulos.
+Os outros autores são estudantes de PhD nesse mesmo lugar, não vi direito
+mas provavelmente orientandos dele.
+Seus interesses de pesquisa são em vários campos relacionados a redes sem-fio,
+como nanoredes. Eu não irei mencionar durante a apresentação, mas ao longo dessa 
+pesquisa na qual esse seminário se baseia, eles referenciam vários trabalhos e
+papers. A maioria deles também de autoria do Akyildiz.
+
+
 {SLIDE 3}
 Nanotecnologia foi descrita pela primeira vez em 1959 pelo físico
 ganhador de Nobel Richard Feynman. Fora descrever pela primeira vez
@@ -79,12 +89,22 @@ Várias alternativas já foram propostas, e elas vão desde miniaturizar método
 existentes a criação de métodos novos inspirados na biologia.
 
 {SLIDE 10} 
+Avanços no campo de nanotecnologia estão permitindo a extensão de métodos comuns de comunicação,
+como rádios, para a nano-escala.
+Nanotubos de carbono e nano-laços de grafeno já foram propostos como nano-antenas, que não são
+meramente reduções de antenas normais: esses componentes sofrem diversos fenomenos quânticos que 
+alteram suas propriedades e funcionamento, para pior ou melhor como veremos a seguir.
+
+Esses nano-rádios mencionados aqui foram mostrados em um artigo de 2007 chamado 'Nanotube Radio'
+
+
+{SLIDE 11} 
 Frequências na banda de terahertz tão atraindo a atenção de pesquisadores para várias aplicações.
 Ainda não é claro como nanomáquinas com capacidade limitadas poderiam usar todo esse potencial
 [como mostrado no slide], mas o autor propõe usar pulsos de baixa energia com duração de
 femtossegundos como um paradigma simples e robusto para comunicação entre nanomáquinas.
 
-{SLIDE 11}
+{SLIDE 12}
 Todas essas propostas inspiradas na biologia foram discutidas em outros artigos pelo Akyildiz
 (com outras participações).
 [Feromonios], [Neuronios] e [Capilares] também envolvem difusão de moléculas, mas tem diferenças
@@ -102,12 +122,12 @@ da capacidade é bem maior que a capacidade de sistemas clássicos de comunicaç
 
 
 ----------------------------
-{SLIDE 12}   [slide titulo subseção]
+{SLIDE 13}   [slide titulo subseção]
 Assim como em todas redes de comunicação, precisam existir protocolos para a
 nanocomunicação, levando em conta as peculiaridades dos métodos de comunicação
 nessa escala, como esses que discutimos anteriormente.
 
-{SLIDE 13}
+{SLIDE 14}
 Um exemplo que eles dão para comunicação na banda de Terahertz é usando pulsos
 de duração de femtossegundos (1fs = 10^(-15)secs).
 Usando pulsos assim, chance de colisão de transmissões são quase inexistentes, 
@@ -118,7 +138,7 @@ Quanto à acesso e routing, dar um ID único a cada nanomáquina pode ser imprat
 porém usando a natureza de comunicação por pulsos pode fazer as nanomáquinas terem
 uma noção das distâncias entre elas.
 
-{SLIDE 14}
+{SLIDE 15}
 Protocolos moleculares são bem diferentes dos protocolos usados em comunicações
 eletromagnéticas.
 Primeiramente, velocidade de transmissão de uma molécula é bem menor que uma onda
