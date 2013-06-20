@@ -29,7 +29,7 @@ Conteúdo técnico da monografia está muito bom. Apresenta e explica bem as par
 e da teoria por trás dele.
 
 \subsection{Contribuições do Autor} %monografia apresenta contribuicoes do autor da mesma?
-A monografia apresenta contribuições do autor sobre o artigo. Mais notavelmente, ele criou algumas
+A monografia apresenta várias contribuições do autor sobre o artigo. Mais notavelmente, ele criou algumas
 imagens para explicar alguns pontos do artigo, também reescreveu algumas partes do artigo (como o algoritmo)
 e em diversas partes apresentou sua opinião e suposições sobre partes do artigo que não foram propriamente
 explicadas.
@@ -65,8 +65,56 @@ Também vi as avaliações dos seminários, e este foi o que obteve mais notas a
 de seminários até hoje (18/06).
 
 \subsection{Qualidade de Legibilidade, Organização e Apresentação do Texto}
+Legibilidade da monografia está muito boa, não achei nenhum problema nesse quesito. Porém
+a organização e apresentação dela pecam em alguns lugares.
+
+A monografia não é muito bem organizada, sendo basicamente texto separado por algumas imagens,
+e divididos em alguns capítulos e parágrafos. Há várias partes que se beneficiariam se fossem subdivididas
+em subcapítulos, ou organizadas em listas, por exemplo. Também existem algumas figuras que estão
+posicionadas em lugares que não condizem com o trecho do texto que a referencia.
+
 \subsection{Qualidade do Conteúdo Técnico do Texto}
-\subsection{Contribuições do Autor} %monografia apresenta contribuicoes do autor da mesma?
+O conteúdo técnico do texto é muito bom, com poucas exceções. Notavelmente, algumas partes técnicas
+(principalmente as que envolviam trechos com notação matemática) estão meio difíceis de entender,
+mas isso pode ser atribuído à qualidade da organização e apresentação do texto.
+
+Também foi notado uma discrepância em um dos 4 trechos de algoritmos mostrados na monografia. Enquanto
+é uma pequena discrepância, julgo esse problema importante devido à relevância desses algoritmos para
+o assunto tratado na monografia.
+
+\subsection{Contribuições do Autor}
+Não. Se o autor fez alguma contribuição, ele não diz isso na monografia.
+
+No inicio ele diz que é uma resenha do artigo, mas ao longo da monografia, 
+aparentemente ele só explica o assunto, mostra os resultados e tal. No capitulo 5,
+sobre a Avaliação Experimental, em algumas partes ele fala brevemente sobre o resultado da simulação,
+interpretando os gráficos, mas pela simplicidade desses trechos não é possível deduzir se ele
+que cunhou essas interpretações do resultado sozinho ou se ele pegou isso do artigo.
+
 \subsection{Opinião do Autor sobre o Artigo}
+Só aparece no último capítulo (o 6), Considerações Finais. Onde ele diz que achou a modelagem
+do artigo satisfatória, mas que faltava formalismo matemático.
+
+Nesse trecho o autor também nota a dúvida do porque os autores do artigo não fizeram testes
+com outros protocolos de roteamento, e registra as perspectivas de trabalhos futuros (pretendidas
+pelos autores originais do artigo).
+
+\subsection{Comentários sobre a Monografia}
+Figura 3 (Algoritmo DescobertaDaVizinhanca): está uma página antes das Figuras 4, 5 e 6
+que mostram as outras partes do algoritmo (e são mostradas em sequencia). Essa figura
+também está posicionada no meio do capitulo anterior ao capitulo que descreve o Algoritmo (cap4)
+
+Algoritmo Agregação (Figura6), linha 5: devido a essa linha, algoritmo só agrega mensagens
+atômicas se distância entre elas for maior que o raio de comunicação (Rcon), enquanto no texto
+sobre o problema de agregação (cap3) ele diz que é basicamente o contrário: devido a restrição de 
+comunicação duas UMs só podem se comunicar se estiverem a no máximo uma distância Rcon uma da outra.
+
+Capitulo 5, paragrafo 1: é mencionado que nas simulações as UMs se movem tomando rotas ditadas
+pelo algoritmo de Dijkstra, mas não é claro como isso funciona.
+
+Capitulo 5, paragrafo 2: frase "a curva indica que o eficiente leva menos tempo para emitir a
+mensagem de resposta para o sorvedouro". O 'eficiente'? Wat? Acho que queria dizer UM ali, não?
+
+
 
 \end{document}
